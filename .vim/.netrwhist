@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/colin/work/thesis/paper-pysquid'
+let g:netrw_dirhist_2='/home/colin/work/thesis/paper-superreg'
+let g:netrw_dirhist_3='/home/colin/work/thesis'
+let g:netrw_dirhist_4='/home/colin/work/thesis/paper-spinglass/bibs'

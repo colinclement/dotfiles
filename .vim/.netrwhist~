@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/Colin/Documents/Semesters/Graduate Classes/Teaching/2218_labs/2015/lab_descriptions/info_packets/Range_finder'
+let g:netrw_dirhist_2='/Developer/NVIDIA/CUDA-7.0/samples/0_Simple'
+let g:netrw_dirhist_3='/Developer/NVIDIA/CUDA-7.0/samples/0_Simple/simplePrintf'
+let g:netrw_dirhist_4='/Developer/NVIDIA/CUDA-7.0/samples/0_Simple/simpleTemplates'
+let g:netrw_dirhist_5='/Developer/NVIDIA/CUDA-7.0/samples/7_CUDALibraries/MC_EstimatePiP'
+let g:netrw_dirhist_6='/Developer/NVIDIA/CUDA-7.0/samples/7_CUDALibraries/MC_EstimatePiP/src'
+let g:netrw_dirhist_7='/Developer/NVIDIA/CUDA-7.0/samples/6_Advanced'
+let g:netrw_dirhist_8='/Developer/NVIDIA/CUDA-7.0/samples/common/inc'

@@ -1,0 +1,7 @@
+set -g prefix C-b
+unbind C-y
+unbind C-h
+
+set -g status-bg black
+set -g window-status-format "#[fg=white,bg=black] #I #W "
+set-option -g status-left "#[fg=white,bg=blue](b) #(whoami)@#(hostname) "
