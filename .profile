@@ -22,4 +22,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # make caps another escape key
-setxkbmap -option caps:escape
+#setxkbmap -option caps:escape

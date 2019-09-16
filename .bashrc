@@ -125,4 +125,12 @@ GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 export PS1='\[$CYAN\]\u\[$WHITE\]@\[$MAG\]\h\[$WHITE\]: \W $(__git_ps1 " (%s)") \[$GREEN\] >>> \[$RESET\]'
 
-export PATH=$HOME/.nimble/bin:$PATH
+#export PATH=$HOME/.nimble/bin:$PATH
+
+# Windows X-windows display set to 0
+export DISPLAY="localhost:0"
+
+# Shortcut in windows brings me to windows home
+if [ -t 1 ]; then
+    cd $HOME
+fi
