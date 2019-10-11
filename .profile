@@ -23,3 +23,5 @@ fi
 
 # make caps another escape key
 #setxkbmap -option caps:escape
+
+eval `ssh-agent` > /dev/null
