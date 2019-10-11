@@ -130,7 +130,5 @@ export PS1='\[$CYAN\]\u\[$WHITE\]@\[$MAG\]\h\[$WHITE\]: \W $(__git_ps1 " (%s)") 
 # Windows X-windows display set to 0
 export DISPLAY="localhost:0"
 
-# Shortcut in windows brings me to windows home
-if [ -t 1 ]; then
-    cd $HOME
-fi
+# Fixes permissions in windows linux subsystem
+umask 022
