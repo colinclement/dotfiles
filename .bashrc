@@ -128,7 +128,7 @@ export PS1='\[$CYAN\]\u\[$WHITE\]@\[$MAG\]\h\[$WHITE\]: \W $(__git_ps1 " (%s)") 
 #export PATH=$HOME/.nimble/bin:$PATH
 
 # Windows X-windows display set to 0
-export DISPLAY="localhost:0"
+#export DISPLAY="localhost:0"
 
 # Fixes permissions in windows linux subsystem
-umask 022
+#umask 022
