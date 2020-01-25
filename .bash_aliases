@@ -9,3 +9,7 @@ alias tl='tmux list-sessions'
 alias tnl='sshuttle -r colin@jection.lassp.cornell.edu 0/0'
 alias open='xdg-open'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf --work-tree=$HOME'
+
+function jsonecho {
+    python -m json.tool $1 | less
+}

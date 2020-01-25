@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/hardmode"]
 	path = .vim/bundle/hardmode
 	url = https://github.com/wikitopian/hardmode.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline

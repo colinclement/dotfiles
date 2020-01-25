@@ -107,13 +107,14 @@ set laststatus=2
 "let g:Powerline_symbols = 'fancy'
 let g:Powerline_colorscheme = 'skwp'
 
+set term=screen-256color
 syntax on
 syntax enable
 set background=dark
+colorscheme solarized
 "set t_Co=256
 
 " let g:solarized_termtrans = 1
-colorscheme solarized
 "colorscheme zenburn
 "call togglebg#map("<F12>")
 

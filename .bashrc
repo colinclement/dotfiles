@@ -112,7 +112,7 @@ if ! shopt -oq posix; then
 fi
 
 # added by Anaconda3 installer
-export PATH="$HOME/anaconda3/bin:$PATH"
+# export PATH="$HOME/anaconda3/bin:$PATH"  # commented out by conda initialize
 #Git branch in bash prompt
 source ~/.git-prompt.sh
 source ~/.git-completion.sh
@@ -127,8 +127,25 @@ export PS1='\[$CYAN\]\u\[$WHITE\]@\[$MAG\]\h\[$WHITE\]: \W $(__git_ps1 " (%s)") 
 
 #export PATH=$HOME/.nimble/bin:$PATH
 
+export PATH=$HOME/bin:$PATH
+
 # Windows X-windows display set to 0
 #export DISPLAY="localhost:0"
 
 # Fixes permissions in windows linux subsystem
 #umask 022
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/coclemen/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/coclemen/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/coclemen/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/coclemen/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
