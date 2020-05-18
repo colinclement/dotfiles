@@ -25,3 +25,5 @@ fi
 #setxkbmap -option caps:escape
 
 eval `ssh-agent` > /dev/null
+
+export PATH="$HOME/.cargo/bin:$PATH"
