@@ -36,6 +36,8 @@ set incsearch
 set history=100
 set scrolloff=3
 
+let mapleader=","
+
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
@@ -127,3 +129,5 @@ nnoremap <Left> <C-w>h
 nnoremap <Up> <C-w>k
 nnoremap <Down> <C-w>j
 
+" automatically remove trailing whitespaces
+autocmd BufWritePre * %s/\s\+$//e
