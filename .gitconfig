@@ -29,6 +29,7 @@
 	default = simple
 [init]
     templatedir = ~/.git_template
+	defaultBranch = main
 #ipython notebook
 [mergetool "nbmerge"]
   cmd = nbmerge $LOCAL $BASE $REMOTE $MERGED
