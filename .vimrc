@@ -126,3 +126,6 @@ nnoremap <Left> <C-w>h
 nnoremap <Up> <C-w>k
 nnoremap <Down> <C-w>j
 
+" html indent settings
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
