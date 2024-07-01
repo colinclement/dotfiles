@@ -107,3 +107,5 @@ function config {
   /usr/bin/git --git-dir=$HOME/.myconf --work-tree=$HOME $@
 }
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+export PROMPT='%(!.%{%F{yellow}%}.)$USER@%{$fg[white]%}%M ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
