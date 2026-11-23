@@ -1,0 +1,63 @@
+#
+# ~/.zpreztorc — prezto configuration (migrated from oh-my-zsh)
+#
+
+# Color output (auto-set to 'no' on dumb terminals).
+zstyle ':prezto:*:*' color 'yes'
+
+# Modules, in load order. 'prompt' must stay last.
+#   oh-my-zsh plugin  ->  prezto module
+#   git               ->  git
+#   brew              ->  homebrew
+#   history           ->  history
+#   python            ->  python
+#   tmux              ->  tmux
+#   common-aliases    ->  (utility + aliases in .zshrc)
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'editor' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'completion' \
+  'homebrew' \
+  'python' \
+  'tmux' \
+  'git' \
+  'prompt'
+
+# --- Editor ---
+zstyle ':prezto:module:editor' key-bindings 'emacs'
+
+# --- Git ---
+# Turn off prezto's git aliases; .zshrc defines the oh-my-zsh ones instead.
+zstyle ':prezto:module:git:alias' skip 'yes'
+
+# --- History ---
+# Keep using oh-my-zsh's history file so your existing history carries over.
+zstyle ':prezto:module:history' histfile "${HOME}/.zsh_history"
+zstyle ':prezto:module:history' histsize 50000
+zstyle ':prezto:module:history' savehist 10000
+
+# --- Prompt ---
+# 'off' because .zshrc recreates oh-my-zsh's robbyrussell prompt.
+# To try prezto's themes instead: `prompt -l` to list, `prompt -p` to preview,
+# then set e.g. 'sorin', 'pure' or 'powerlevel10k' here and delete the
+# PROMPT section in .zshrc.
+zstyle ':prezto:module:prompt' theme 'powerline'
+
+# --- Utility ---
+# Command correction (was ENABLE_CORRECTION="true" in oh-my-zsh).
+zstyle ':prezto:module:utility' correct 'yes'
+# rm/cp/mv/ln ask before overwriting (matches oh-my-zsh common-aliases).
+zstyle ':prezto:module:utility' safe-ops 'yes'
+
+# --- Terminal ---
+zstyle ':prezto:module:terminal' auto-title 'yes'
+
+# --- tmux ---
+# Don't auto-start tmux (oh-my-zsh's tmux plugin didn't by default).
+zstyle ':prezto:module:tmux:auto-start' local 'no'
+zstyle ':prezto:module:tmux:auto-start' remote 'no'
