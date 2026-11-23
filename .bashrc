@@ -126,3 +126,6 @@ RESET=$(tput sgr0)
 export PS1='\[$CYAN\]\u\[$WHITE\]@\[$MAG\]\h\[$WHITE\]: \W $(__git_ps1 " (%s)") \[$GREEN\] >>> \[$RESET\]'
 
 export PATH=$HOME/.nimble/bin:$PATH
+. "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
