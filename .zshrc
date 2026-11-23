@@ -26,22 +26,22 @@ fi
 #   ➜  dirname git:(branch) ✗
 # (prezto's own theme is set to 'off' in .zpreztorc)
 # =============================================================================
-setopt prompt_subst
+#setopt prompt_subst
 
-_rr_git_prompt() {
-  local ref
-  ref=$(command git symbolic-ref --short HEAD 2>/dev/null) \
-    || ref=$(command git rev-parse --short HEAD 2>/dev/null) \
-    || return 0
-  local out=" %B%F{blue}git:(%F{red}${ref//\%/%%}%F{blue})"
-  if [[ -n $(command git status --porcelain --ignore-submodules=dirty 2>/dev/null | head -n 1) ]]; then
-    out+=" %F{yellow}✗"
-  fi
-  print -rn -- "${out}%f%b"
-}
-
-PROMPT='%B%(?.%F{green}.%F{red})➜%f  %F{cyan}%c%f%b$(_rr_git_prompt) '
-RPROMPT=''
+#_rr_git_prompt() {
+#  local ref
+#  ref=$(command git symbolic-ref --short HEAD 2>/dev/null) \
+#    || ref=$(command git rev-parse --short HEAD 2>/dev/null) \
+#    || return 0
+#  local out=" %B%F{blue}git:(%F{red}${ref//\%/%%}%F{blue})"
+#  if [[ -n $(command git status --porcelain --ignore-submodules=dirty 2>/dev/null | head -n 1) ]]; then
+#    out+=" %F{yellow}✗"
+#  fi
+#  print -rn -- "${out}%f%b"
+#}
+#
+#PROMPT='%B%(?.%F{green}.%F{red})➜%f  %F{cyan}%c%f%b$(_rr_git_prompt) '
+#RPROMPT=''
 
 # =============================================================================
 # git — oh-my-zsh git plugin aliases
